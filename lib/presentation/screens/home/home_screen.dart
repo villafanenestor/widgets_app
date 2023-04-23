@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:widgets_app/config/menu/menu_item.dart';
+import 'package:widgets_app/presentation/screens/screens.dart';
 
 class HomeScreen extends StatelessWidget {
+  static const name = 'home_screen';
   const HomeScreen({super.key});
 
   @override
@@ -55,7 +57,8 @@ class _CustomListTile extends StatelessWidget {
         //     .push(MaterialPageRoute(builder: (_) => const ButtonsScreen()));
 
         // Navigator.pushNamed(context, menuItem.link);
-        context.push(menuItem.link);//Solo funciona con Go_router
+        context.push(menuItem.link); //Solo funciona con Go_router
+        // context.pushNamed(CardsScreen.name);//Para llamar por nombre de la ruta
       },
     );
   }

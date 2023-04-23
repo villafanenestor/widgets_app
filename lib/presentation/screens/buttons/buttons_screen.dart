@@ -3,6 +3,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
 class ButtonsScreen extends StatelessWidget {
+  static const name = 'buttons_screen';
   const ButtonsScreen({super.key});
 
   @override
