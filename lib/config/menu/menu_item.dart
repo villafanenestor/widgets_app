@@ -15,5 +15,5 @@ class MenuItem {
 
 const appMenuItems = <MenuItem>[
   MenuItem(title: 'Botones', subTitle: 'varios botones en flutter', link: '/buttons', icon: Icons.smart_button_outlined),
-  MenuItem(title: 'Tarjestas', subTitle: 'Un contenedor estilizado', link: '/tarjetas', icon: Icons.credit_card),
+  MenuItem(title: 'Tarjestas', subTitle: 'Un contenedor estilizado', link: '/cards', icon: Icons.credit_card),
 ];
