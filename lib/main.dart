@@ -12,6 +12,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
+      title: 'Widgets de flutter',
       debugShowCheckedModeBanner: false,
       theme: AppTheme(selectedColor: 4).getThemeData(),
       // home: const HomeScreen(),

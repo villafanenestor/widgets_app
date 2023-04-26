@@ -20,5 +20,15 @@ final GoRouter appRouter = GoRouter(
       name: ButtonsScreen.name, //Propiedad estatica que se agrego a cada widget para luego ser llamada aca.  
       builder: (context, state)=>const ButtonsScreen(),
       ),
+    GoRoute(
+      path: '/progress',
+      name: ProgressScreen.name, //Propiedad estatica que se agrego a cada widget para luego ser llamada aca.  
+      builder: (context, state)=>const ProgressScreen(),
+      ),
+    GoRoute(
+      path: '/snackbars',
+      name: SnackBarScreen.name, //Propiedad estatica que se agrego a cada widget para luego ser llamada aca.  
+      builder: (context, state)=>const SnackBarScreen(),
+      ),
   ],
 );
