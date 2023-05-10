@@ -30,5 +30,20 @@ final GoRouter appRouter = GoRouter(
       name: SnackBarScreen.name, //Propiedad estatica que se agrego a cada widget para luego ser llamada aca.  
       builder: (context, state)=>const SnackBarScreen(),
       ),
+    GoRoute(
+      path: '/animated',
+      name: AnimatedScreen.name, //Propiedad estatica que se agrego a cada widget para luego ser llamada aca.  
+      builder: (context, state)=>const AnimatedScreen(),
+      ),
+    GoRoute(
+      path: '/ui-controls',
+      name: UIControlScreen.name, //Propiedad estatica que se agrego a cada widget para luego ser llamada aca.  
+      builder: (context, state)=>const UIControlScreen(),
+      ),
+    GoRoute(
+      path: '/tutorial',
+      name: AppTutorialScreen.name, //Propiedad estatica que se agrego a cada widget para luego ser llamada aca.  
+      builder: (context, state)=> AppTutorialScreen(),
+      ),
   ],
 );
