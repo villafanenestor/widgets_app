@@ -49,4 +49,9 @@ const appMenuItems = <MenuItem>[
       subTitle: 'Opciones para UI',
       link: '/tutorial',
       icon: Icons.accessibility_new_rounded),
+  MenuItem(
+      title: 'infinity Scroll & pull refresh',
+      subTitle: 'Manejo de Infinite Scroll y pull refresh',
+      link: '/infinite',
+      icon: Icons.accessibility_new_rounded),
 ];

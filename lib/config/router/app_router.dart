@@ -45,5 +45,10 @@ final GoRouter appRouter = GoRouter(
       name: AppTutorialScreen.name, //Propiedad estatica que se agrego a cada widget para luego ser llamada aca.  
       builder: (context, state)=> AppTutorialScreen(),
       ),
+    GoRoute(
+      path: '/infinite',
+      name: InfiniteScreen.name, //Propiedad estatica que se agrego a cada widget para luego ser llamada aca.  
+      builder: (context, state)=> InfiniteScreen(),
+      ),
   ],
 );
