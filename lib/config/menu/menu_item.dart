@@ -54,4 +54,9 @@ const appMenuItems = <MenuItem>[
       subTitle: 'Manejo de Infinite Scroll y pull refresh',
       link: '/infinite',
       icon: Icons.accessibility_new_rounded),
+  MenuItem(
+      title: 'Counter Screen',
+      subTitle: 'Counter Screen con Riverpool',
+      link: '/counter',
+      icon: Icons.accessibility_new_rounded),
 ];

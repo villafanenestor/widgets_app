@@ -43,7 +43,14 @@ class _InfiniteScreenState extends State<InfiniteScreen> {
     setState(() {
       
     });
+    moveScrollToBottom();
 
+  }
+
+  void moveScrollToBottom(){
+    // Mueve automaticamente el scroll
+    if(scrollController.position.pixels+ 150 <= scrollController.position.maxScrollExtent) return;
+    scrollController.animateTo(scrollController.position.pixels + 120, duration: Duration(seconds: 1), curve: Curves.fastOutSlowIn);
   }
 
   @override
@@ -75,10 +82,12 @@ class _InfiniteScreenState extends State<InfiniteScreen> {
 
 
   Future<void> onRefresh() async{
+    isLoading=true;
+    setState(() {});
     await Future.delayed(const Duration(seconds: 3));
     if(!isMounted) return;
     final lastId = imageIds.last;
-    isLoading=true;
+    isLoading=false;
     imageIds.clear();
     imageIds.add(lastId+1);
     addFiveImages();

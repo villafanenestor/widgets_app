@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:widgets_app/presentation/screens/counter/counter_screen.dart';
 import 'package:widgets_app/presentation/screens/screens.dart';
 
 final GoRouter appRouter = GoRouter(
@@ -49,6 +50,11 @@ final GoRouter appRouter = GoRouter(
       path: '/infinite',
       name: InfiniteScreen.name, //Propiedad estatica que se agrego a cada widget para luego ser llamada aca.  
       builder: (context, state)=> InfiniteScreen(),
+      ),
+    GoRoute(
+      path: '/counter',
+      name: CounterScreen.name, //Propiedad estatica que se agrego a cada widget para luego ser llamada aca.  
+      builder: (context, state)=> const CounterScreen(),
       ),
   ],
 );
